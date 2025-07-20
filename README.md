@@ -56,7 +56,8 @@ wss://arb1.arbitrum.io/ws/YOUR_API_KEY
 ---
 
 ##  Register free keys here:
-🌐 Ankr RPC Keys
+   🌐 Ankr RPC Keys
+
 ---
 ## 🧪 Future Ideas
 ⏱️ Add gas history chart
@@ -64,6 +65,7 @@ wss://arb1.arbitrum.io/ws/YOUR_API_KEY
 🛠 Add custom RPC support
 💰 Convert gas cost to USD using ETH price
 ---
+
 ## 🧑‍💻 Author
 Made with ❤️ by Shekhar0109
 ---
