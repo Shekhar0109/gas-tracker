@@ -2,7 +2,6 @@
 
 Track real-time **Ethereum**, **Polygon**, and **Arbitrum** gas fees using **Next.js**, **Zustand**, and **Ethers.js** — with live updates via WebSockets.
 
-![Next.js + Zustand + Ethers](https://img.shields.io/badge/Built%20with-Next.js%20%7C%20Zustand%20%7C%20Ethers-blueviolet?style=flat-square)
 
 ---
 
