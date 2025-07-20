@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ⛽ Real-Time Gas Tracker
 
-## Getting Started
+Track real-time **Ethereum**, **Polygon**, and **Arbitrum** gas fees using **Next.js**, **Zustand**, and **Ethers.js** — with live updates via WebSockets.
 
-First, run the development server:
+![Next.js + Zustand + Ethers](https://img.shields.io/badge/Built%20with-Next.js%20%7C%20Zustand%20%7C%20Ethers-blueviolet?style=flat-square)
 
-```bash
+---
+
+## 🚀 Features
+
+- 🌐 **Live Gas Updates** via WebSocket (no 3rd party APIs)
+- 📊 Displays **Base Fee** and **Priority Fee** for 3 chains
+- ⚛️ Built using **Next.js App Router**, **TypeScript**, and **Tailwind CSS**
+- ⚡ State managed by **Zustand**
+- 📡 Direct on-chain data from RPC nodes
+
+---
+
+## 🛠️ Stack
+
+- [Next.js 15+](https://nextjs.org)
+- [Zustand](https://github.com/pmndrs/zustand)
+- [Ethers.js v6](https://docs.ethers.org/v6/)
+- [Tailwind CSS](https://tailwindcss.com/)
+
+---
+
+## 📸 Preview
+
+![Preview Screenshot](https://user-images.githubusercontent.com/your-placeholder-image.png)
+
+---
+
+## 🧠 How It Works
+
+1. Connects to **Ethereum**, **Polygon**, and **Arbitrum** via JSON RPC & WebSocket.
+2. Subscribes to new block headers for each chain.
+3. Extracts `baseFeePerGas` and estimates `priorityFee` dynamically.
+4. Updates Zustand store → triggers UI updates.
+
+---
+
+## 📦 Installation
+
+git clone https://github.com/Shekhar0109/gas-tracker.git
+cd gas-tracker
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+🔐 RPC Key Note
+To avoid Unauthorized errors from public RPCs:
+Replace RPC endpoints in lib/providers.ts with your own:
+https://rpc.ankr.com/eth/YOUR_API_KEY
+wss://arb1.arbitrum.io/ws/YOUR_API_KEY
+Register free keys here:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+🌐 Ankr RPC Keys
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+🧪 Future Ideas
+⏱️ Add gas history chart
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+📈 Display average/max over time
 
-## Learn More
+🛠 Add custom RPC support
 
-To learn more about Next.js, take a look at the following resources:
+💰 Convert gas cost to USD using ETH price
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+🧑‍💻 Author
+Made with ❤️ by Shekhar0109
