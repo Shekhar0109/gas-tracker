@@ -59,13 +59,13 @@ wss://arb1.arbitrum.io/ws/YOUR_API_KEY
    🌐 Ankr RPC Keys
 
 ---
-## 🧪 Future Ideas
+###🧪 Future Ideas
 ⏱️ Add gas history chart
 📈 Display average/max over time
 🛠 Add custom RPC support
 💰 Convert gas cost to USD using ETH price
 ---
 
-## 🧑‍💻 Author
+### 🧑‍💻 Author
 Made with ❤️ by Shekhar0109
 ---
